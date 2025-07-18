@@ -3,6 +3,7 @@ import type { Metadata } from "next"
 import { Roboto } from "next/font/google"
 import { ThemeProvider } from "@/lib/theme-context"
 import { LanguageProvider } from "@/lib/language-context"
+import { Analytics } from "@vercel/analytics/next"
 import "./globals.css"
 
 const roboto = Roboto({
@@ -126,6 +127,7 @@ export default function RootLayout({
       <body className={roboto.className} translate="no">
         <ThemeProvider>
           <LanguageProvider>{children}</LanguageProvider>
+          <Analytics />
         </ThemeProvider>
       </body>
     </html>
