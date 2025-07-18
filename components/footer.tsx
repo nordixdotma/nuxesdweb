@@ -47,7 +47,7 @@ export default function Footer() {
             <div className="flex items-center mb-6">
               <div className="h-12 w-auto">
                 <Image
-                  src="/logo-footer.png"
+                  src="/whitelogo.png"
                   alt="Nuxesdweb"
                   width={150}
                   height={48}

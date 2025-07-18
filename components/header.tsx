@@ -126,7 +126,7 @@ export default function Header() {
         <Link href="/" className="relative z-20 mr-4 flex items-center px-2 py-1">
           <div className="h-12 w-auto">
             <Image
-              src={theme === "dark" ? "/logo-dark.png" : "/logo-light.png"}
+              src={theme === "dark" ? "/whitelogo.png" : "/blacklogo.png"}
               alt="Nuxesdweb"
               width={120}
               height={48}
@@ -254,7 +254,7 @@ export default function Header() {
           <Link href="/" className="flex items-center">
             <div className="h-10 w-auto">
               <Image
-                src={theme === "dark" ? "/logo-dark.png" : "/logo-light.png"}
+                src={theme === "dark" ? "/whitelogo.png" : "/blacklogo.png"}
                 alt="Nuxesdweb"
                 width={100}
                 height={40}

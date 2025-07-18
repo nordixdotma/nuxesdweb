@@ -27,14 +27,14 @@ export default function TestimonialsSection() {
   const testimonials = [
     {
       quote_key: "quote_1",
-      image: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=150&h=150&fit=crop&crop=face",
+      image: "https://images.unsplash.com/photo-1633332755192-727a05c4013d?q=80&w=880&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
       name: "John Smith",
       position_key: "ceo_techstart",
       rating: 5,
     },
     {
       quote_key: "quote_2",
-      image: "https://images.unsplash.com/photo-1494790108755-2616b612b786?w=150&h=150&fit=crop&crop=face",
+      image: "https://plus.unsplash.com/premium_photo-1663933534186-e50d9fcef389?q=80&w=877&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
       name: "Sarah Johnson",
       position_key: "marketing_director_growthco",
       rating: 5,
@@ -55,7 +55,7 @@ export default function TestimonialsSection() {
     },
     {
       quote_key: "quote_5",
-      image: "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=150&h=150&fit=crop&crop=face",
+      image: "https://plus.unsplash.com/premium_photo-1726776109594-aedf9714ac12?q=80&w=883&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
       name: "Robert Brown",
       position_key: "product_manager_innovatelab",
       rating: 5,

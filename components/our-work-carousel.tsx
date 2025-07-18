@@ -94,7 +94,7 @@ export default function OurWorkCarousel() {
         </div>
 
         {/* Carousel */}
-        <div className="relative w-full px-4 pb-[5rem]">
+        <div className="relative w-full px-4 pb-[1rem]">
           <Carousel>
             <CarouselContent className="-ml-4">
               {carouselItems.map((item) => (
@@ -137,7 +137,7 @@ export default function OurWorkCarousel() {
               ))}
             </CarouselContent>
             <CarouselNavigation
-              className="absolute -bottom-20 left-auto top-auto w-full justify-end gap-2"
+              className="absolute -bottom-10 left-auto top-auto w-full justify-end gap-2"
               classNameButton="bg-secondary *:stroke-secondary-foreground dark:bg-secondary *:stroke-secondary-foreground"
               alwaysShow
             />

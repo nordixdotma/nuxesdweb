@@ -31,15 +31,15 @@ export default function HeroSection() {
             {/* Left Column: Content */}
             <div className="flex flex-col justify-center">
               <div className="flex items-center mb-4 md:mb-6">
-                <div className="flex items-center space-x-3 md:space-x-4">
+                <div className="flex items-center space-x-2 md:space-x-3">
                   <div className="flex -space-x-2 md:-space-x-3">
                     <img
-                      src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=40&h=40&fit=crop&crop=face"
+                      src="https://images.unsplash.com/photo-1633332755192-727a05c4013d?q=80&w=880&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
                       alt="Customer"
                       className="w-8 h-8 md:w-10 md:h-10 rounded-full border-2 border-background shadow-sm"
                     />
                     <img
-                      src="https://images.unsplash.com/photo-1494790108755-2616b612b786?w=40&h=40&fit=crop&crop=face"
+                      src="https://plus.unsplash.com/premium_photo-1663933534186-e50d9fcef389?q=80&w=877&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
                       alt="Customer"
                       className="w-8 h-8 md:w-10 md:h-10 rounded-full border-2 border-background shadow-sm"
                     />
@@ -50,7 +50,7 @@ export default function HeroSection() {
                     />
                   </div>
                   <div className="text-xs md:text-sm">
-                    <span className="text-primary font-semibold">+250</span>
+                    <span className="text-primary font-semibold">750+</span>
                     <span className="text-muted-foreground ml-1">{dict.hero.satisfied_business_owners}</span>
                   </div>
                 </div>

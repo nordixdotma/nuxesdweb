@@ -69,7 +69,7 @@ export default function PartnersSection() {
   const arr = [Logos.tailwindcss, Logos.framer, Logos.nextjs, Logos.aws]
 
   return (
-    <section className="py-8 sm:py-12 relative">
+    <section className="py-2 relative">
       <div className="max-w-7xl mx-auto px-4 md:px-6">
         <div className="w-full">
           <Marquee>
