@@ -134,15 +134,15 @@ export default function HeroSection() {
             {/* Mobile: First row with 2 cards */}
             <div className="grid grid-cols-2 gap-3 md:hidden">
               {/* Left Card - Sites Created */}
-              <div className="bg-white/10 backdrop-blur-md rounded-xl p-3 shadow-xl border border-border flex items-center justify-center">
+              <div className="bg-white/10 backdrop-blur-md rounded-xl p-2 shadow-xl border border-border flex items-center justify-center">
                 <div className="text-center text-foreground">
-                  <p className="text-lg font-bold text-primary">+40,000</p>
+                  <p className="text-lg font-bold text-primary">+1,500</p>
                   <p className="text-xs leading-tight">{dict.hero.sites_created}</p>
                 </div>
               </div>
 
               {/* Right Card - Pricing */}
-              <div className="bg-white/10 backdrop-blur-md rounded-xl p-3 shadow-xl border border-border flex items-center justify-center">
+              <div className="bg-white/10 backdrop-blur-md rounded-xl p-2 shadow-xl border border-border flex items-center justify-center">
                 <div className="text-center text-foreground">
                   <p className="text-xs font-medium leading-tight">{dict.hero.website_5_pages}</p>
                   <p className="text-sm font-bold text-primary leading-tight">{dict.hero.starting_from}</p>
@@ -152,7 +152,7 @@ export default function HeroSection() {
 
             {/* Mobile: Second row - Reviews card full width */}
             <div className="md:hidden">
-              <div className="bg-white/10 backdrop-blur-md rounded-xl p-3 shadow-xl border border-border">
+              <div className="bg-white/10 backdrop-blur-md rounded-xl p-2 shadow-xl border border-border">
                 <div className="flex items-center justify-center gap-4">
                   <div className="flex-shrink-0">
                     <div className="flex">
@@ -201,36 +201,37 @@ export default function HeroSection() {
             {/* Desktop: Original 3-column layout */}
             <div className="hidden md:block bg-white/10 backdrop-blur-md rounded-2xl p-4 shadow-xl border border-border">
               <div className="text-center text-foreground">
-                <p className="text-2xl font-bold text-primary whitespace-nowrap">+40,000</p>
+                <p className="text-2xl font-bold text-primary whitespace-nowrap">+1,500</p>
                 <p className="text-sm whitespace-nowrap">{dict.hero.sites_created}</p>
               </div>
             </div>
 
             <div className="hidden md:block bg-white/10 backdrop-blur-md rounded-2xl p-4 shadow-xl border border-border">
-              <div className="flex items-center justify-between gap-4 w-full">
-                <div className="flex items-center gap-4">
-                  <div className="flex-shrink-0">
-                    <div className="flex">
-                      {[1, 2, 3, 4, 5].map((star) => (
-                        <svg key={star} className="w-4 h-4 text-yellow-400" fill="currentColor" viewBox="0 0 20 20">
-                          <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
-                        </svg>
-                      ))}
-                    </div>
-                    <p className="text-xs text-foreground mt-1 whitespace-nowrap">{dict.hero.reviews}</p>
+              <div className="flex items-center justify-center gap-8 w-full h-full">
+                {/* Left: Stars and reviews */}
+                <div className="flex flex-col items-center justify-center flex-shrink-0">
+                  <div className="flex">
+                    {[1, 2, 3, 4, 5].map((star) => (
+                      <svg key={star} className="w-4 h-4 text-yellow-400" fill="currentColor" viewBox="0 0 20 20">
+                        <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                      </svg>
+                    ))}
                   </div>
-                  <div className="text-center text-foreground">
-                    <p className="text-sm font-medium whitespace-nowrap">
-                      {dict.hero.it_matters.split(" ")[0]}{" "}
-                      <span className="text-primary font-semibold">{dict.hero.it_matters.split(" ")[1]}</span>{" "}
-                      {dict.hero.it_matters.split(" ")[2]}{" "}
-                      <span className="text-primary font-semibold">{dict.hero.it_matters.split(" ")[3]}</span>{" "}
-                      {dict.hero.it_matters.split(" ")[4]}{" "}
-                      <span className="text-primary font-semibold">{dict.hero.it_matters.split(" ")[5]}</span>
-                    </p>
-                  </div>
+                  <p className="text-xs text-foreground mt-1 whitespace-nowrap">{dict.hero.reviews}</p>
                 </div>
-                <div className="hidden sm:block flex-shrink-0">
+                {/* Center: Text */}
+                <div className="flex flex-col items-center justify-center text-center text-foreground">
+                  <p className="text-sm font-medium whitespace-nowrap">
+                    {dict.hero.it_matters.split(" ")[0]}{" "}
+                    <span className="text-primary font-semibold">{dict.hero.it_matters.split(" ")[1]}</span>{" "}
+                    {dict.hero.it_matters.split(" ")[2]}{" "}
+                    <span className="text-primary font-semibold">{dict.hero.it_matters.split(" ")[3]}</span>{" "}
+                    {dict.hero.it_matters.split(" ")[4]}{" "}
+                    <span className="text-primary font-semibold">{dict.hero.it_matters.split(" ")[5]}</span>
+                  </p>
+                </div>
+                {/* Right: SVG */}
+                <div className="hidden sm:flex items-center justify-center flex-shrink-0">
                   <svg className="h-8 w-auto" viewBox="0 0 24 24">
                     <path
                       d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z"
